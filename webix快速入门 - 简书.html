@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://www.jianshu.com/p/3f2078b68ccc -->
+<html><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<script type="text/javascript" src="./webix快速入门 - 简书_files/1255494d3a"></script><script src="./webix快速入门 - 简书_files/nr-1026.min.js.下载"></script><script src="./webix快速入门 - 简书_files/push.js.下载"></script><script async="" src="./webix快速入门 - 简书_files/analytics.js.下载"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1255494d3a","applicationID":"15702971","transactionName":"e1daR0JWVV9RER9ZWkxdRxxDUVZE","queueTime":2,"applicationTime":161,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="description" content="XB软件公司最近发布了JavaScriptUI库Webix，其中包含的组件超过45个，用这些组件可以构建跟HTML5和CSS3兼容的程序，这些程序不仅能在个人电脑上运行，还能用在iOS、Android和Blackberry设备上运行。它能访问离线web存储、地理位置（geolocation）API、能在画布上绘图，并集成了jQuery和Backbone.js。Webix提供了简单的服务端集成...">
+  <meta property="wb:webmaster" content="294ec9de89e7fadb">
+  <meta property="qc:admins" content="104102651453316562112116375">
+  <meta property="qc:admins" content="11635613706305617">
+  <meta property="qc:admins" content="1163561616621163056375">
+  <meta name="google-site-verification" content="cV4-qkUJZR6gmFeajx_UyPe47GW9vY6cnCrYtCHYNh4">
+  <meta name="google-site-verification" content="HF7lfF8YEGs1qtCE-kPml8Z469e2RHhGajy6JPVy5XI">
+  <meta http-equiv="mobile-agent" content="format=html5; url=http://www.jianshu.com/p/3f2078b68ccc">
+
+  <!-- Apple -->
+  <meta name="apple-mobile-web-app-title" content="简书">
+
+    <!--  Meta for Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=888237539, app-argument=jianshu://notes/5103201">
+  <!-- End -->
+
+  <!--  Meta for Twitter Card -->
+  <meta content="summary" property="twitter:card">
+  <meta content="@jianshucom" property="twitter:site">
+  <meta content="webix快速入门" property="twitter:title">
+  <meta content="XB软件公司最近发布了JavaScriptUI库Webix，其中包含的组件超过45个，用这些组件可以构建跟HTML5和CSS3兼容的程序，这些程序不仅能在个人电脑上运行，还能用在iOS、Android和Blackberry设备上运行。它能访问离线web存储、地理位置（geolocation）API、能在画布上绘图，并集成了jQuery和Backbone.js。Webix提供了简单的服务端集成控件，PHP、ASP.NET、Java和Ruby等各种技术都可以跟客户端的Webix部件直接通讯。此外这些组件还能用在一些MVC框架中，比如RoR、ASP.NET..." property="twitter:description">
+  <meta content="http://www.jianshu.com/p/3f2078b68ccc" property="twitter:url">
+  <!-- End -->
+
+  <!--  Meta for OpenGraph -->
+  <meta property="fb:app_id" content="865829053512461">
+  <meta property="og:site_name" content="简书">
+  <meta property="og:title" content="webix快速入门">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.jianshu.com/p/3f2078b68ccc">
+  <meta property="og:description" content="XB软件公司最近发布了JavaScriptUI库Webix，其中包含的组件超过45个，用这些组件可以构建跟HTML5和CSS3兼容的程序，这些程序不仅能在个人电脑上运行，还能用在iOS、Andr...">
+  <!-- End -->
+
+  <!--  Meta for Facebook Applinks -->
+  <meta property="al:ios:url" content="jianshu://notes/5103201">
+  <meta property="al:ios:app_store_id" content="888237539">
+  <meta property="al:ios:app_name" content="简书">
+
+  <meta property="al:android:url" content="jianshu://notes/5103201">
+  <meta property="al:android:package" content="com.jianshu.haruki">
+  <meta property="al:android:app_name" content="简书">
+  <!-- End -->
+
+
+    <title>webix快速入门 - 简书</title>
+
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="3jgwJsj357eX+LeL42dQU9KA5UT6ih24zJxczgowYTMyLHHg75HgKB08+4BNYsSTcbVkSdbN+JZuS6CWc9xQ8Q==">
+
+  <link rel="stylesheet" media="all" href="./webix快速入门 - 简书_files/web-70bff738dcab3b4066a2.css">
+  
+  <link rel="stylesheet" media="all" href="./webix快速入门 - 简书_files/entry-70bff738dcab3b4066a2.css">
+
+  <link href="http://cdn-qn0.jianshu.io/assets/favicons/favicon-ea87c042cbed82f63ec4cb18d1e1bc8b.ico" rel="icon">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/57-ce5a88a3e30a8f1f353e7b7e08710b47.png" sizes="57x57">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/72-d8f7a49ed070ff78bc7657785924d097.png" sizes="72x72">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/76-be915e70264c65090f03afff88e0f50c.png" sizes="76x76">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/114-fa410f47eef755b2aa43b94d63357102.png" sizes="114x114">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/120-50638ce65b8729b7761a4e68fe25724f.png" sizes="120x120">
+      <link rel="apple-touch-icon-precomposed" href="http://cdn-qn0.jianshu.io/assets/apple-touch-icons/152-13b452db96e234a630d6d7bcbedbcd22.png" sizes="152x152">
+</head>
+
+  <body lang="zh-CN" class="reader-black-font">
+    <!-- 全局顶部导航栏 -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="width-limit">
+    <!-- 左上方 Logo -->
+    <a class="logo" href="http://www.jianshu.com/"><img src="./webix快速入门 - 简书_files/logo-58fd04f6f0de908401aa561cda6a0688.png" alt="Logo"></a>
+
+    <!-- 右上角 -->
+      <!-- 未登录显示登录/注册/写文章 -->
+      <a class="btn write-btn" target="_blank" href="http://www.jianshu.com/writer#/">
+        <i class="iconfont ic-write"></i>写文章
+</a>      <a class="btn sign-up" href="http://www.jianshu.com/sign_up">注册</a>
+      <a class="btn log-in" href="http://www.jianshu.com/sign_in">登录</a>
+
+    <!-- 如果用户登录，显示下拉菜单 -->
+
+    <div class="style-mode"><a class="style-mode-btn"><i class="iconfont ic-navigation-mode"></i></a> <div class="popover-modal" style="left: 0px; display: none;"><div class="meta"><i class="iconfont ic-navigation-night"></i><span>夜间模式</span></div> <div class="switch day-night-group"><a class="switch-btn">开</a> <a class="switch-btn active">关</a></div> <hr> <div class="switch font-family-group"><a class="switch-btn font-song">宋体</a> <a class="switch-btn font-hei active">黑体</a></div> <div class="switch"><a class="switch-btn active">简</a> <a class="switch-btn">繁</a></div></div></div>
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav">
+            <li class="">
+              <a href="http://www.jianshu.com/">
+                <span class="menu-text">首页</span><i class="iconfont ic-navigation-discover menu-icon"></i>
+</a>            </li>
+            <li class="">
+              <a class="app-download-btn" href="http://www.jianshu.com/apps"><span class="menu-text">下载App</span><i class="iconfont ic-navigation-download menu-icon"></i></a>
+            </li>
+          <li class="search">
+            <form target="_blank" action="http://www.jianshu.com/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+              <input type="text" name="q" id="q" value="" placeholder="搜索" class="search-input">
+              <a class="search-btn" href="javascript:void(null)"><i class="iconfont ic-search"></i></a>
+              <!-- <div id="navbar-trending-search"></div> -->
+</form>          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    
+<div class="note">
+  <div class="post">
+    <div class="article">
+        <h1 class="title">webix快速入门</h1>
+
+        <!-- 作者区域 -->
+        <div class="author">
+          <a class="avatar" href="http://www.jianshu.com/u/0ed58ad32bf2">
+            <img src="./webix快速入门 - 简书_files/8839251978b0" alt="144">
+</a>          <div class="info">
+            <span class="tag">作者</span>
+            <span class="name"><a href="http://www.jianshu.com/u/0ed58ad32bf2">TomLuo</a></span>
+            <!-- 关注用户按钮 -->
+            <a class="btn btn-success follow"><i class="iconfont ic-follow"></i><span>关注</span></a>
+            <!-- 文章数据信息 -->
+            <div class="meta">
+              <!-- 如果文章更新时间大于发布时间，那么使用 tooltip 显示更新时间 -->
+                <span class="publish-time">2016.08.04 06:50</span>
+              <span class="wordage">字数 1800</span>
+            <span class="views-count">阅读 577</span><span class="comments-count">评论 1</span><span class="likes-count">喜欢 1</span></div>
+          </div>
+          <!-- 如果是当前作者，加入编辑按钮 -->
+        </div>
+        <!-- -->
+
+        <!-- 文章内容 -->
+        <div class="show-content">
+          <blockquote><p>XB 软件公司最近发布了JavaScript UI 库Webix ，其中包含的组件超过45个，用这些组件可以构建跟HTML5 和 CSS3 兼容的程序，这些程序不仅能在个人电脑上运行，还能用在iOS、 Android 和 Blackberry 设备上运行。它能访问离线web存储、地理位置（ geolocation） API、能在画布上绘图，并集成了jQuery 和 Backbone.js。<br>Webix提供了简单的服务端集成控件，PHP、 ASP.NET、Java和 Ruby等各种技术都可以跟客户端的Webix部件直接通讯。此外这些组件还能用在一些MVC框架中，比如RoR、ASP.NET MVC、Spring、Struts 和 Grails.<br>Webix 库中包含的组件 有 Accordion、Calendar、Carousel、Chart、Colorboard、Context、ContextMenu、 DataTable、Dataview、Form、Form控件、Grouplist、HTMLform、IFrame、Layout、Resizer、List、Menu、Multiview、 Popup、Property Sheet、Scrollview、 Tabview、 Template、 Toolbar、 Tree、Treetable、 Unitlist、Uploader 和 Window。</p></blockquote>
+<p>本文将对快速入门例子进行详细的解述。</p>
+<h2>例子１: 行和列</h2>
+<p>布局是通过行和列来决定的，行和列之间的border是通过type来设定的<br>type的可能值有"line" (default), "head", "space", "wide" and "clean" (borderless)</p>
+<pre class="hljs css"><code class="css"><span class="hljs-selector-tag">webix</span><span class="hljs-selector-class">.ui</span>({
+    <span class="hljs-attribute">type</span>:<span class="hljs-string">"line"</span>,
+    rows: [
+        { template:<span class="hljs-string">"Row 1"</span>},
+        { <span class="hljs-attribute">template</span>:<span class="hljs-string">"Row2"</span>}
+    ]
+});</code></pre>
+<h2>例子２:  width 和 height设置布局大小</h2>
+<p>布局的大小可以通过 width 和 height配置</p>
+<pre class="hljs css"><code class="css"><span class="hljs-selector-tag">webix</span><span class="hljs-selector-class">.ui</span>({
+    <span class="hljs-attribute">width</span>:<span class="hljs-number">400</span>,
+    height:<span class="hljs-number">200</span>,
+    type:<span class="hljs-string">"line"</span>,
+    rows: [
+        { template:<span class="hljs-string">"Row 1"</span>},
+        { <span class="hljs-attribute">template</span>:<span class="hljs-string">"Row2"</span>}
+    ]
+});</code></pre>
+<h2>例子3: 自定义的html实现布局</h2>
+<p>布局的也可以通过自定义的html实现,通过配置container属性<br><code>&lt;div id="testA" style="width:400px; height:300px; margin:10px;"&gt;&lt;/div&gt;</code></p>
+<pre class="hljs css"><code class="css"><span class="hljs-selector-tag">webix</span><span class="hljs-selector-class">.ui</span>({
+    <span class="hljs-attribute">type</span>: <span class="hljs-string">"line"</span>,
+    container: <span class="hljs-string">"testA"</span>,
+    // ...
+});</code></pre>
+<h2>例子4: 栏和列</h2>
+<ul>
+<li>列和栏可以相互嵌套，列中可以包含栏，栏里可以包含列</li>
+<li>{},//!empty也可以包含空的列或栏，但里面没有属性和组件</li>
+<li>view:"resizer"  一个缩放线可以设置之间的任何行和列的大小，但刷新后会恢复到原始</li>
+<li>width和height控制着显示栏或列的宽度高度。</li>
+</ul>
+<pre class="hljs less"><code class="less"><span class="hljs-selector-tag">webix</span><span class="hljs-selector-class">.ui</span>({
+    <span class="hljs-attribute">type</span>:<span class="hljs-string">"line"</span>,
+    <span class="hljs-attribute">rows</span>: [
+        { <span class="hljs-attribute">template</span>:<span class="hljs-string">"Row 1"</span>,<span class="hljs-attribute">height</span>:<span class="hljs-number">50</span>},
+        {<span class="hljs-attribute">view</span>:<span class="hljs-string">"resizer"</span>}, <span class="hljs-comment">//!resizer line</span>
+        { <span class="hljs-attribute">cols</span>:[ <span class="hljs-comment">//2nd row</span>
+            { <span class="hljs-attribute">template</span>:<span class="hljs-string">"Column 1"</span>},
+            {},<span class="hljs-comment">//!empty</span>
+            { <span class="hljs-attribute">template</span>:<span class="hljs-string">"Column 2"</span>}
+        ]}
+    ]
+});</code></pre>
+<h2>例子５: 工具栏与列表</h2>
+<ol>
+<li>配置工具栏Toolbar<br>  一般的第一个（上）行都放置工具栏按钮,用于用户与app交互<br>  所有的webix组件和控件都有view属性，这个属性用来区别你是创建的是按以按钮，复选框，列表，表格等<br>  注意，此时行的高度是随着工具栏里的控件的高度变化而变化的</li>
+<li>view:"form" 为表单控件，为了得到用户数据，表单控件里包含其它许大量的控件这些控件被放在ows/elements 和 cols</li>
+<li>align 表明控件里文本的相对位置，可能的值有"left" (default), "right" and "center."</li>
+<li>list控件<ul>
+<li>列表控件是一个包含数据的控件，主要有以下属性</li>
+<li>data: 用于解析内联数据</li>
+<li>url: 载入数据从一个文件或数据库</li>
+<li>template: 定义数据的值，但必须是hash类型</li>
+<li>datatype：识别来源数据的类型</li>
+<li>webix支持JSON (default), JSArray, XML, CSV and HTML table 数据，如果没有指明，则用的是json</li>
+</ul>
+</li>
+</ol>
+<pre class="hljs groovy"><code class="groovy">var filmset = [
+    { <span class="hljs-string">id:</span><span class="hljs-number">1</span>, <span class="hljs-string">title:</span><span class="hljs-string">"The Shawshank Redemption"</span>, <span class="hljs-string">year:</span><span class="hljs-number">1994</span>},
+    { <span class="hljs-string">id:</span><span class="hljs-number">2</span>, <span class="hljs-string">title:</span><span class="hljs-string">"The Godfather"</span>, <span class="hljs-string">year:</span><span class="hljs-number">1972</span>},
+    { <span class="hljs-string">id:</span><span class="hljs-number">3</span>, <span class="hljs-string">title:</span><span class="hljs-string">"The Godfather: Part II"</span>, <span class="hljs-string">year:</span><span class="hljs-number">1974</span>},
+    { <span class="hljs-string">id:</span><span class="hljs-number">4</span>, <span class="hljs-string">title:</span><span class="hljs-string">"The Good, the Bad and the Ugly"</span>, <span class="hljs-string">year:</span><span class="hljs-number">1966</span>},
+    { <span class="hljs-string">id:</span><span class="hljs-number">5</span>, <span class="hljs-string">title:</span><span class="hljs-string">"My Fair Lady"</span>, <span class="hljs-string">year:</span><span class="hljs-number">1964</span>},
+    { <span class="hljs-string">id:</span><span class="hljs-number">6</span>, <span class="hljs-string">title:</span><span class="hljs-string">"12 Angry Men"</span>, <span class="hljs-string">year:</span><span class="hljs-number">1957</span>}
+];
+webix.ui({
+<span class="hljs-symbol">    type:</span><span class="hljs-string">"line"</span>,
+<span class="hljs-symbol">    rows:</span> [
+        { <span class="hljs-string">view:</span><span class="hljs-string">"toolbar"</span>, <span class="hljs-string">id:</span><span class="hljs-string">"mybar"</span>, <span class="hljs-string">elements:</span>[
+            { <span class="hljs-string">view:</span><span class="hljs-string">"button"</span>, <span class="hljs-string">value:</span><span class="hljs-string">"Add"</span>, <span class="hljs-string">width:</span> <span class="hljs-number">70</span>},
+            { <span class="hljs-string">view:</span><span class="hljs-string">"button"</span>, <span class="hljs-string">value:</span><span class="hljs-string">"Delete"</span>, <span class="hljs-string">width:</span> <span class="hljs-number">70</span> },
+            { <span class="hljs-string">view:</span><span class="hljs-string">"button"</span>, <span class="hljs-string">value:</span><span class="hljs-string">"Update"</span>, <span class="hljs-string">width:</span> <span class="hljs-number">70</span> },
+            { <span class="hljs-string">view:</span><span class="hljs-string">"button"</span>, <span class="hljs-string">value:</span><span class="hljs-string">"Clear Form"</span>, <span class="hljs-string">width:</span> <span class="hljs-number">85</span> }]
+        },
+        { <span class="hljs-string">cols:</span>[
+            {<span class="hljs-string">view:</span><span class="hljs-string">"form"</span>, <span class="hljs-string">id:</span><span class="hljs-string">"myform"</span>, <span class="hljs-string">width:</span><span class="hljs-number">200</span>, <span class="hljs-string">elements:</span>[
+                { <span class="hljs-string">view:</span><span class="hljs-string">"text"</span>, <span class="hljs-string">name:</span><span class="hljs-string">"title"</span>, <span class="hljs-string">placeholder:</span><span class="hljs-string">"Title"</span>, <span class="hljs-string">width:</span><span class="hljs-number">180</span>, <span class="hljs-string">align:</span><span class="hljs-string">"center"</span>},
+                { <span class="hljs-string">view:</span><span class="hljs-string">"text"</span>, <span class="hljs-string">name:</span><span class="hljs-string">"year"</span>, <span class="hljs-string">placeholder:</span><span class="hljs-string">"Year"</span>, <span class="hljs-string">width:</span><span class="hljs-number">180</span>, <span class="hljs-string">align:</span><span class="hljs-string">"center"</span>} ]
+            },
+            {
+<span class="hljs-symbol">                view:</span><span class="hljs-string">"list"</span>,
+<span class="hljs-symbol">                id:</span><span class="hljs-string">"mylist"</span>,
+<span class="hljs-symbol">                template:</span><span class="hljs-string">"#id# - #title# - #year#"</span>,
+<span class="hljs-symbol">                select:</span><span class="hljs-literal">false</span>, <span class="hljs-comment">//enables selection</span>
+<span class="hljs-symbol">                height:</span><span class="hljs-number">400</span>,
+<span class="hljs-symbol">                data:</span> filmset
+            }
+        ]}
+    ]
+});</code></pre>
+<h2>例子6: 事件,实现对列表的添删改查</h2>
+<p>将操作函数附加在控件上实现对App的交相事件</p>
+<ul>
+<li>使用ID</li>
+<li>必须指定事件在一个组件视图中</li>
+<li>附加一个函数到控件</li>
+</ul>
+<p>如何添加一行数据到列表</p>
+<ul>
+<li>为了增加一行数据到列表，首先要从表单中获取文本值。</li>
+<li>获取表单的值用表单的ID, 如$$("myform").getValues()</li>
+<li>为了得到指定的值，需要指定表单里控件的name 如$$("myform").getValues().title</li>
+</ul>
+<p>通过列表更新数据</p>
+<ol>
+<li>传输列表中所选的数据项到form中对应的域</li>
+<li>将form中己改变的数据替换掉原来列表中的数据</li>
+</ol>
+<p>通过列表删除数据</p>
+<ol>
+<li>获取列表中所选项的ID</li>
+<li>将所选表列的数据从列表中的删除</li>
+</ol>
+<p>改进删除表单,在删之前给出提示确认框,通过webix.confirm()实现</p>
+<ol>
+<li>title,窗口标题</li>
+<li>text,窗口的提示信息</li>
+<li>callback，点选按按钮(yes或no)后的触发函数</li>
+</ol>
+<pre class="hljs groovy"><code class="groovy">    webix.ui.fullScreen();
+    var filmset = [
+        {<span class="hljs-string">id:</span> <span class="hljs-number">1</span>, <span class="hljs-string">title:</span> <span class="hljs-string">"The Shawshank Redemption"</span>, <span class="hljs-string">year:</span> <span class="hljs-number">1994</span>},
+        {<span class="hljs-string">id:</span> <span class="hljs-number">2</span>, <span class="hljs-string">title:</span> <span class="hljs-string">"The Godfather"</span>, <span class="hljs-string">year:</span> <span class="hljs-number">1972</span>},
+        {<span class="hljs-string">id:</span> <span class="hljs-number">3</span>, <span class="hljs-string">title:</span> <span class="hljs-string">"The Godfather: Part II"</span>, <span class="hljs-string">year:</span> <span class="hljs-number">1974</span>},
+        {<span class="hljs-string">id:</span> <span class="hljs-number">4</span>, <span class="hljs-string">title:</span> <span class="hljs-string">"The Good, the Bad and the Ugly"</span>, <span class="hljs-string">year:</span> <span class="hljs-number">1966</span>},
+        {<span class="hljs-string">id:</span> <span class="hljs-number">5</span>, <span class="hljs-string">title:</span> <span class="hljs-string">"My Fair Lady"</span>, <span class="hljs-string">year:</span> <span class="hljs-number">1964</span>},
+        {<span class="hljs-string">id:</span> <span class="hljs-number">6</span>, <span class="hljs-string">title:</span> <span class="hljs-string">"12 Angry Men"</span>, <span class="hljs-string">year:</span> <span class="hljs-number">1957</span>}
+    ];
+
+    <span class="hljs-comment">//function add_row() {</span>
+    <span class="hljs-comment">//    webix.message("Add")</span>
+    <span class="hljs-comment">//}</span>
+    <span class="hljs-comment">//function update_row() {</span>
+    <span class="hljs-comment">//    webix.message("Update")</span>
+    <span class="hljs-comment">//}</span>
+    <span class="hljs-comment">//function delete_row() {</span>
+    <span class="hljs-comment">//    webix.message("Delete")</span>
+    <span class="hljs-comment">//}</span>
+
+
+    webix.ui({
+<span class="hljs-symbol">        rows:</span> [
+            {
+<span class="hljs-symbol">                view:</span> <span class="hljs-string">"toolbar"</span>, <span class="hljs-string">id:</span> <span class="hljs-string">"mybar"</span>, <span class="hljs-string">elements:</span> [
+                {<span class="hljs-string">view:</span> <span class="hljs-string">"button"</span>, <span class="hljs-string">value:</span> <span class="hljs-string">"Add"</span>, <span class="hljs-string">width:</span> <span class="hljs-number">70</span>, <span class="hljs-string">click:</span> add_row},
+                {<span class="hljs-string">view:</span> <span class="hljs-string">"button"</span>, <span class="hljs-string">value:</span> <span class="hljs-string">"Delete"</span>, <span class="hljs-string">width:</span> <span class="hljs-number">70</span>, <span class="hljs-string">click:</span> delete_row},
+                {<span class="hljs-string">view:</span> <span class="hljs-string">"button"</span>, <span class="hljs-string">value:</span> <span class="hljs-string">"Update"</span>, <span class="hljs-string">width:</span> <span class="hljs-number">70</span>, <span class="hljs-string">click:</span> update_row},
+                {<span class="hljs-string">view:</span> <span class="hljs-string">"button"</span>, <span class="hljs-string">value:</span> <span class="hljs-string">"Clear Form"</span>, <span class="hljs-string">width:</span> <span class="hljs-number">85</span>, <span class="hljs-string">click:</span> <span class="hljs-string">"$$('myform').clear()"</span>}]
+            },
+            {
+<span class="hljs-symbol">                cols:</span> [
+                    {
+<span class="hljs-symbol">                        view:</span> <span class="hljs-string">"form"</span>, <span class="hljs-string">id:</span> <span class="hljs-string">"myform"</span>, <span class="hljs-string">width:</span> <span class="hljs-number">200</span>, <span class="hljs-string">elements:</span> [
+                        {<span class="hljs-string">view:</span> <span class="hljs-string">"text"</span>, <span class="hljs-string">name:</span> <span class="hljs-string">"title"</span>, <span class="hljs-string">placeholder:</span> <span class="hljs-string">"Title"</span>, <span class="hljs-string">width:</span> <span class="hljs-number">180</span>, <span class="hljs-string">align:</span> <span class="hljs-string">"center"</span>},
+                        {<span class="hljs-string">view:</span> <span class="hljs-string">"text"</span>, <span class="hljs-string">name:</span> <span class="hljs-string">"year"</span>, <span class="hljs-string">placeholder:</span> <span class="hljs-string">"Year"</span>, <span class="hljs-string">width:</span> <span class="hljs-number">180</span>, <span class="hljs-string">align:</span> <span class="hljs-string">"center"</span>}]
+                    },
+                    {
+<span class="hljs-symbol">                        view:</span> <span class="hljs-string">"list"</span>,
+<span class="hljs-symbol">                        id:</span> <span class="hljs-string">"mylist"</span>,
+<span class="hljs-symbol">                        template:</span> <span class="hljs-string">"#title# - #year#"</span>,
+<span class="hljs-symbol">                        select:</span> <span class="hljs-literal">true</span>, <span class="hljs-comment">//enables selection</span>
+<span class="hljs-symbol">                        height:</span> <span class="hljs-number">400</span>,
+<span class="hljs-symbol">                        data:</span> filmset
+                    }
+                ]
+            }
+        ]
+    });
+    <span class="hljs-comment">//adding form data to a list while creating a new row for it</span>
+    function add_row() {
+        $$(<span class="hljs-string">"mylist"</span>).add({
+<span class="hljs-symbol">            title:</span> $$(<span class="hljs-string">"myform"</span>).getValues().title,
+<span class="hljs-symbol">            year:</span> $$(<span class="hljs-string">"myform"</span>).getValues().year,
+        })
+    }
+    <span class="hljs-comment">//一旦选择某项，则会自动将传设置到form表单中</span>
+    $$(<span class="hljs-string">"mylist"</span>).attachEvent(<span class="hljs-string">"onAfterSelect"</span>, function (id) {
+        $$(<span class="hljs-string">"myform"</span>).setValues({
+<span class="hljs-symbol">            title:</span> $$(<span class="hljs-string">"mylist"</span>).getItem(id).title,
+<span class="hljs-symbol">            year:</span> $$(<span class="hljs-string">"mylist"</span>).getItem(id).year
+        });
+    });
+    function update_row() {
+        <span class="hljs-comment">//获取列表中所选项的ID</span>
+        var sel = $$(<span class="hljs-string">"mylist"</span>).getSelectedId();
+        <span class="hljs-keyword">if</span> (!sel) <span class="hljs-keyword">return</span>;
+        <span class="hljs-comment">//得到form表单中改变的值</span>
+        var value1 = $$(<span class="hljs-string">"myform"</span>).getValues().title;
+        var value2 = $$(<span class="hljs-string">"myform"</span>).getValues().year;
+
+        <span class="hljs-comment">//获取列表中所选择的项并对相关属性赋值</span>
+        var item = $$(<span class="hljs-string">"mylist"</span>).getItem(sel); <span class="hljs-comment">//selected item object</span>
+        item.title = value1;
+        item.year = value2;
+        <span class="hljs-comment">//对列表中原来的对象赋值</span>
+        $$(<span class="hljs-string">"mylist"</span>).updateItem(sel, item);
+    }
+
+    function delete_row()
+    {
+        <span class="hljs-comment">//获取列表中所选项的ID</span>
+        var sel = $$(<span class="hljs-string">"mylist"</span>).getSelectedId();
+        <span class="hljs-keyword">if</span> (!sel) <span class="hljs-keyword">return</span>;
+        var item = $$(<span class="hljs-string">"mylist"</span>).getItem(sel); <span class="hljs-comment">//selected item object</span>
+        var title=item.title;
+        var year=item.year;
+        webix.confirm({
+<span class="hljs-symbol">            title:</span> <span class="hljs-string">"Delete"</span>,
+<span class="hljs-symbol">            text:</span> <span class="hljs-string">"Are you sure you want to delete ["</span>+title+<span class="hljs-string">" - "</span>+year+<span class="hljs-string">"] from the list?"</span>,
+<span class="hljs-symbol">            callback:</span> function(result) {
+                <span class="hljs-keyword">if</span> (result) {
+                    <span class="hljs-comment">//将所选表列的数据从列表中的删除</span>
+                    $$(<span class="hljs-string">"mylist"</span>).remove(sel);
+                }
+            }
+        });
+
+    }</code></pre>
+<h1>参考源码：</h1>
+<p><a href="https://github.com/tomlxq/best-practice/tree/master/gs-webix" target="_blank">https://github.com/tomlxq/best-practice/tree/master/gs-webix</a></p>
+
+        </div>
+        <!--  -->
+
+        <div class="show-foot">
+          <a class="notebook" href="http://www.jianshu.com/nb/4649466">
+            <i class="iconfont ic-search-notebook"></i> <span>web前端</span>
+</a>          <div class="copyright" data-toggle="tooltip" data-html="true" data-original-title="转载请联系作者获得授权，并标注“简书作者”。">
+            © 著作权归作者所有
+          </div>
+          <div class="modal-wrap" data-report-note="">
+            <a id="report-modal">举报文章</a>
+          </div>
+        </div>
+    </div>
+
+    <!-- 文章底部作者信息 -->
+      <div class="follow-detail">
+        <div class="info">
+          <a class="avatar" href="http://www.jianshu.com/u/0ed58ad32bf2">
+            <img src="./webix快速入门 - 简书_files/8839251978b0" alt="144">
+</a>          <a class="btn btn-success follow"><i class="iconfont ic-follow"></i><span>关注</span></a>
+          <a class="title" href="http://www.jianshu.com/u/0ed58ad32bf2">TomLuo</a>
+        <p>写了 76752 字，被 58 人关注，获得了 44 个喜欢</p></div>
+          <div class="signature">
+            <span>10年软件开发，一线码农。
+</span>
+          </div>
+      </div>
+
+      <div class="support-author"><p>如果觉得我的文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</p> <div class="btn btn-pay">赞赏支持</div> <!----> <!----> <!----></div>
+
+    <div class="meta-bottom">
+      <div class="like"><div class="btn like-group"><div class="btn-like"><a href="http://www.jianshu.com/sign_in"><i class="iconfont ic-like"></i>喜欢</a></div> <div class="modal-wrap"><a>1</a></div></div> <!----></div>
+      <div class="share-group">
+        <a class="share-circle" data-action="weixin-share" data-toggle="tooltip" data-original-title="分享到微信">
+          <i class="iconfont ic-wechat"></i>
+        </a>
+        <a class="share-circle" data-toggle="tooltip" href="javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;http://cwb.assets.jianshu.io/notes/images/5103201/weibo/image_0ee78b7f4af2.jpg&#39;, &#39;推荐 @新印象管方微博 的文章《webix快速入门》（ 分享自 @简书 ）&#39;,&#39;http://www.jianshu.com/p/3f2078b68ccc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));" data-original-title="分享到微博">
+          <i class="iconfont ic-weibo"></i>
+        </a>
+          <a class="share-circle" data-toggle="tooltip" href="http://cwb.assets.jianshu.io/notes/images/5103201/weibo/image_0ee78b7f4af2.jpg" target="_blank" data-original-title="下载长微博图片">
+            <i class="iconfont ic-picture"></i>
+          </a>
+        <a class="share-circle more-share" tabindex="0" data-toggle="popover" data-placement="top" data-html="true" data-trigger="focus" href="javascript:void(0);" data-content="
+          &lt;ul class=&quot;share-list&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;http://www.jianshu.com/p/3f2078b68ccc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=qzone&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 TomLuo 的文章《webix快速入门》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-zone&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到QQ空间&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/3f2078b68ccc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=twitter&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 TomLuo 的文章《webix快速入门》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-twitter&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到Twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/3f2078b68ccc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=facebook&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-facebook&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/3f2078b68ccc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=google_plus&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-google&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到Google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;http://www.jianshu.com/p/3f2078b68ccc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=douban&#39;)+&#39;&amp;title=&#39;+e(&#39;webix快速入门&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-douban&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到豆瓣&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        " data-original-title="" title="">更多分享</a>
+      </div>
+    </div>
+    <div><div id="comment-list" class="comment-list"><div><form class="new-comment"><a class="avatar"><img src="./webix快速入门 - 简书_files/avatar_default-78d4d1f68984cd6d4379508dd94b4210.png"></a> <div class="sign-container"><a href="http://www.jianshu.com/sign_in" class="btn btn-sign">登录</a> <span>后发表评论</span></div></form></div> <div id="normal-comment-list" class="normal-comment-list"><div><div><div class="top"><span>1条评论</span> <a class="author-only">只看作者</a> <a class="close-btn" style="display: none;">关闭评论</a> <div class="pull-right"><a class="active">按喜欢排序</a><a class="">按时间正序</a><a class="">按时间倒序</a></div></div></div> <!----> <!----> <div id="comment-7033578" class="comment"><div><div class="author"><a href="http://www.jianshu.com/u/246b85a1cab3" target="_blank" class="avatar"><img src="./webix快速入门 - 简书_files/12-aeeea4bedf10f2a12c0d50d626951489.jpg"></a> <div class="info"><a href="http://www.jianshu.com/u/246b85a1cab3" target="_blank" class="name">臭臭的凡人</a> <!----> <div class="meta"><span>2楼 · 2017.01.09 09:48</span></div></div></div> <div class="comment-wrap"><p>请问还有讲解吗？<img src="./webix快速入门 - 简书_files/relaxed.png" alt=":relaxed:" title=":relaxed:" class="emoji" width="20" height="20"> </p> <div class="tool-group"><a><i class="iconfont ic-zan"></i> <span>赞</span></a> <a><i class="iconfont ic-comment"></i> <span>回复</span></a> <!----> <!----></div></div></div> <div class="sub-comment-list hide"><!----> <!----></div></div> <div class="comments-placeholder" style="display: none;"><div class="author"><div class="avatar"></div> <div class="info"><div class="name"></div> <div class="meta"></div></div></div> <div class="text"></div> <div class="text animation-delay"></div> <div class="tool-group"><i class="iconfont ic-zan-active"></i><div class="zan"></div> <i class="iconfont ic-list-comments"></i><div class="zan"></div></div></div></div></div> <!----> <!----></div></div>
+  </div>
+
+  <div class="side-tool"><ul><li data-placement="left" data-toggle="tooltip" data-container="body" data-original-title="回到顶部" style="display: none;"><a href="http://www.jianshu.com/p/3f2078b68ccc#" class="function-button"><i class="iconfont ic-backtop"></i></a></li> <!----> <!----> <li data-placement="left" data-toggle="tooltip" data-container="body" data-original-title="分享文章"><a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-html="true" data-trigger="focus" href="javascript:void(0);" data-content="&lt;ul class=&#39;share-list&#39;&gt;
+                &lt;li&gt;&lt;a class=&quot;weixin-share&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-weixin&quot;&gt;&lt;/i&gt;&lt;span&gt;分享到微信&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;javascript:void((function(s,d,e,r,l,p,t,z,c){var%20f=&#39;http://v.t.sina.com.cn/share/share.php?appkey=1881139527&#39;,u=z||d.location,p=[&#39;&amp;url=&#39;,e(u),&#39;&amp;title=&#39;,e(t||d.title),&#39;&amp;source=&#39;,e(r),&#39;&amp;sourceUrl=&#39;,e(l),&#39;&amp;content=&#39;,c||&#39;gb2312&#39;,&#39;&amp;pic=&#39;,e(p||&#39;&#39;)].join(&#39;&#39;);function%20a(){if(!window.open([f,p].join(&#39;&#39;),&#39;mb&#39;,[&#39;toolbar=0,status=0,resizable=1,width=440,height=430,left=&#39;,(s.width-440)/2,&#39;,top=&#39;,(s.height-430)/2].join(&#39;&#39;)))u.href=[f,p].join(&#39;&#39;);};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();})(screen,document,encodeURIComponent,&#39;&#39;,&#39;&#39;,&#39;http://cwb.assets.jianshu.io/notes/images/5103201/weibo/image_0ee78b7f4af2.jpg&#39;, &#39;推荐 @新印象管方微博 的文章《webix快速入门》（ 分享自 @简书 ）&#39;,&#39;http://www.jianshu.com/p/3f2078b68ccc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weibo&#39;,&#39;页面编码gb2312|utf-8默认gb2312&#39;));&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-weibo&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到微博&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;http://cwb.assets.jianshu.io/notes/images/5103201/weibo/image_0ee78b7f4af2.jpg&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;social-icon-sprite social-icon-picture&quot;&gt;&lt;/i&gt;&lt;span&gt;下载长微博图片&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=&#39;+e(&#39;http://www.jianshu.com/p/3f2078b68ccc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=qzone&#39;)+&#39;&amp;title=&#39;+e(&#39;推荐 TomLuo 的文章《webix快速入门》&#39;),x=function(){if(!window.open(r,&#39;qzone&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-zone&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到QQ空间&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://twitter.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/3f2078b68ccc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=twitter&#39;)+&#39;&amp;text=&#39;+e(&#39;推荐 TomLuo 的文章《webix快速入门》（ 分享自 @jianshucom ）&#39;)+&#39;&amp;related=&#39;+e(&#39;jianshucom&#39;),x=function(){if(!window.open(r,&#39;twitter&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=600,height=600&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-twitter&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到Twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://www.facebook.com/dialog/share?app_id=483126645039390&amp;display=popup&amp;href=http://www.jianshu.com/p/3f2078b68ccc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=facebook&#39;,x=function(){if(!window.open(r,&#39;facebook&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-facebook&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到Facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,r=&#39;https://plus.google.com/share?url=&#39;+e(&#39;http://www.jianshu.com/p/3f2078b68ccc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=google_plus&#39;),x=function(){if(!window.open(r,&#39;google_plus&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})();&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-google&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到Google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:&#39;&#39;,r=&#39;http://www.douban.com/recommend/?url=&#39;+e(&#39;http://www.jianshu.com/p/3f2078b68ccc?utm_campaign=maleskine&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=douban&#39;)+&#39;&amp;title=&#39;+e(&#39;webix快速入门&#39;)+&#39;&amp;sel=&#39;+e(s)+&#39;&amp;v=1&#39;,x=function(){if(!window.open(r,&#39;douban&#39;,&#39;toolbar=0,resizable=1,scrollbars=yes,status=1,width=450,height=330&#39;))location.href=r+&#39;&amp;r=1&#39;};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()&quot;&gt;&lt;i class=&#39;social-icon-sprite social-icon-douban&#39;&gt;&lt;/i&gt;&lt;span&gt;分享到豆瓣&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;" data-original-title="" title="" class="function-button"><i class="iconfont ic-share"></i></a> <!----></li></ul></div>
+</div>
+<div class="note-bottom"><div class="main"><div class="title">被以下专题收入，发现更多相似内容</div> <!----> <div class="include-collection"><!----> <a href="http://www.jianshu.com/c/bDHhpK?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./webix快速入门 - 简书_files/首页投稿.png"><div class="name">首页投稿</div></a><a href="http://www.jianshu.com/c/85a60a85aed5?utm_source=desktop&amp;utm_medium=notes-included-collection" target="_blank" class="item"><img src="./webix快速入门 - 简书_files/1475067570.jpg"><div class="name">html</div></a></div> <!----></div> <!----> <!----></div>
+
+    <script type="application/json" data-name="page-data">{"user_signed_in":false,"locale":"zh-CN","os":"windows","read_mode":"day","read_font":"font2","note_show":{"is_author":false,"is_following_author":false,"is_liked_note":false,"uuid":"03c54aa4-2788-4694-bab8-46d5c0deb195"},"note":{"id":5103201,"slug":"3f2078b68ccc","user_id":2026576,"notebook_id":4649466,"commentable":true,"likes_count":1,"views_count":577,"public_wordage":1800,"comments_count":1,"author":{"total_wordage":76752,"followers_count":58,"total_likes_count":44}}}</script>
+    
+    <script src="./webix快速入门 - 简书_files/babel-polyfill-70bff738dcab3b4066a2.js.下载"></script>
+    <script src="./webix快速入门 - 简书_files/web-base-70bff738dcab3b4066a2.js.下载"></script>
+<script src="./webix快速入门 - 简书_files/web-70bff738dcab3b4066a2.js.下载"></script>
+    
+    <script src="./webix快速入门 - 简书_files/entry-70bff738dcab3b4066a2.js.下载"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35169517-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<div style="display:none">
+  <script src="./webix快速入门 - 简书_files/z_stat.php" language="JavaScript"></script><script src="./webix快速入门 - 简书_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1258679142" target="_blank" title="站长统计">站长统计</a>
+</div>
+
+<script>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+  
+
+<!----><!----></body></html>
